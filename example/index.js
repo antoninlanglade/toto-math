@@ -1,10 +1,12 @@
 import Maths from '../src/index.js';
 
 const random = Maths.random(1,13);
+const randomInt = Maths.randomInt(1,7);
 const clamp = Maths.clamp(random,5,7);
 const map = Maths.map(clamp, 5, 7, 0, 1);
 
 console.log('Random between 1 & 13', random);
+console.log('Random Int between 1 & 7', randomInt);
 console.log('Clamp between 5 & 7', clamp);
 console.log('Map 5 -> 7 to 0 -> 1', map);
 
